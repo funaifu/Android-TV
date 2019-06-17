@@ -1,7 +1,7 @@
 ### Android-TV
 ####屏幕适配</br>
  屏幕适配时文件包可以写成values-160dpi ，dpi为像素密度指的是每英寸距离的像素点数 ，density为屏幕密度指的是每平方英寸的像素点数。</br>
- 换算公式：dpi = density乘160;</br>
+ 换算公式：dpi = density * 160;</br>
  我们可以根据以下代码获取到density信息</br>
  DisplayMetrics metrics = new DisplayMetrics();</br>
  getWindowManager().getDefaultDisplay().getMetrics(metrics);</br>
